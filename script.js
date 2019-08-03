@@ -3,5 +3,5 @@ var numToUse = Math.floor(Math.random() * 6 + 1);
 //changes background image
 window.onload = function() {
   document.body.style.backgroundImage =
-    'url("img/transform' + numToUse + '.png")';
+    'url("img/transform' + numToUse + '.PNG")';
 };
