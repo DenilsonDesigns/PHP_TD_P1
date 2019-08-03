@@ -1,5 +1,6 @@
-// PHP - Random Quote Generator
+<!-- // PHP - Random Quote Generator  -->
 <?php
+// main quotes array
 $quotes = array(
     array(
         "quote" => "Finish him off, Prime! Do it now!",
@@ -52,6 +53,7 @@ $quotes = array(
     ),
 
 );
+//function returns a random quote from array using RNG
 function getRandomQuote($arr)
 {
     $arr_to_print = rand(0, count($arr) - 1);
@@ -61,6 +63,7 @@ function getRandomQuote($arr)
     return $arr[$arr_to_print];
 }
 
+// contructs html to print to page
 function printQuote()
 {
     $arr_printing = getRandomQuote($GLOBALS['quotes']);
